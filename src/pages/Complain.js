@@ -25,7 +25,7 @@ export default function Complain() {
   const [state] = useContext(UserContext);
 
   useEffect(() => {
-    socket = io('http://localhost:5000', {
+    socket = io('https://demo-backend-deploy.herokuapp.com/api/v1', {
       auth: {
         token: localStorage.getItem('token'),
       },
